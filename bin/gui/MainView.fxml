@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="650.0" stylesheets="@properties.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <VBox prefHeight="400.0" prefWidth="650.0" style="-fx-background-color: #ffffff;" stylesheets="@properties.css">
+         <children>
+            <MenuBar opacity="0.92" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #d20478; -fx-background-radius: 15;">
+              <menus>
+                <Menu mnemonicParsing="false" text="Registrar">
+                  <items>
+                    <MenuItem fx:id="mnitClient" mnemonicParsing="false" onAction="#onMnitClientAction" text="Clientes" />
+                        <MenuItem mnemonicParsing="false" text="Produtos" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="mnitAbout" mnemonicParsing="false" onAction="#onMnitAboutAction" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <Blend />
+               </effect>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </MenuBar>
+            <ImageView fitHeight="358.0" fitWidth="337.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../logo.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="160.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

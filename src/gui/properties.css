@@ -1,0 +1,64 @@
+.table-view {
+    -fx-base:  #d20478;
+    -fx-border-color:  #d20478;
+    -fx-background-radius: 15;
+    -fx-control-inner-background: #ffffff;
+    -fx-background-color:  transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-padding: 5.0;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: black;
+    -fx-border-color: #ffcbdb;
+    -fx-font-size: 15.0 pt;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #ffcbdb;
+    -fx-border-color:  #d20478;
+}
+
+.table-view .button{
+	-fx-background-color:  #ffcbdb;
+	-fx-font-size: 15.0 pt;
+	-fx-text-fill:  #d20478;
+	-fx-font-weight: bold;
+	-fx-border-color:   #d20478;
+	-fx-border-radius: 15;
+	-fx-background-radius: 15;
+}
+
+.table-view .label{
+     -fx-text-fill: #ffffff;
+}
+
+.menu-bar .label {
+    -fx-font-size: 15.0 pt;
+    -fx-text-fill: white;
+
+}
+
+.menu:hover {
+    -fx-background-color:  #FFffff;  
+    -fx-background-radius: 15.0;   
+}
+
+.menu:hover .label {
+    -fx-text-fill: #d20478;  
+}
+
+.menu-item:hover{
+	-fx-border-color: #d20478;
+	-fx-background-color:  transparent; 
+}
+
+.menu-item:hover .label{
+	-fx-text-fill: #d20478;
+}
+
+.menu-item:hover .menu{
+	-fx-background-color:  #FFffff;  
+    -fx-background-radius: 15.0;
+}
+
